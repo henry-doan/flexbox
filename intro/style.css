@@ -23,7 +23,19 @@ html {
 .container {
 	display: flex;
 	border: 10px solid;
-	height: 100vh;
+	min-height: 100vh;
+	/*default direction
+	Main axis from left to right
+	cross axis from top to bottom
+	depending on row and column
+
+	flex-direction: row;*/
+
+	flex-direction: column;
+/*
+	flex-direction: column-reverse;
+
+	flex-direction: row-reverse;*/
 }
 
 .box1 {
