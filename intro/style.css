@@ -42,9 +42,6 @@ html {
  justify-content: space-around;
 }
 
-.box {
-	flex: 1;
-}
 
 .box1 {
 	background: #1abc9c;
