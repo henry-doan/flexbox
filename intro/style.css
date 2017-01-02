@@ -22,28 +22,30 @@ html {
 
 .container {
 	display: flex;
-/*	justify-content is how the item align in the main axis.
- default
-	justify-content: flex-start;
+	min-height: 100vh;
+/*	
+	it is vertically algin to center but depends on the container and the axises
+	default, strech all  the way to the width or height of the axis
+	align-items: stretch;
 
 	this starts at the end of the container
-	justify-content: flex-end;
+	align-items: flex-end;
+
+	this starts at the start of the container
+	align-items: flex-start;
  
- this justify-content in the center of the container
- justify-content: center;
+  this align-items in the center of the container
+  align-items: center;
 
-	adds space between the items
- justify-content: space-between;
-
-	space on the left and right side
-
-	This all depends on the main axis with row and columns
+	looks at the text and make sure the bottom is align properly
+	align-items: baseline;
 */
- justify-content: space-around;
+
+ align-items: baseline; 
 }
 
-
 .box1 {
+	font-size: 30px;
 	background: #1abc9c;
 }
 
@@ -52,10 +54,12 @@ html {
 }
 
 .box3 {
+	font-size: 150px;
 	background: #9b59b6;
 }
 
 .box4 {
+	font-size: 200px;
 	background: #34495e;
 }
 
