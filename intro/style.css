@@ -22,52 +22,43 @@ html {
 
 .container {
 	display: flex;
-	min-height: 100vh;
-	align-items: flex-start;
 }
 
 /*	
-	over write the default of a item
-	default, strech all  the way to the width or height of the axis
-	align-self: stretch;
+	what do i do with extra space or
+	what do i do when i don't have space
 
-	this starts at the end of the container
-	align-self: flex-end;
+	flex is proportions to scale
 
-	this starts at the start of the container, the hieght of what they need
-	align-self: flex-start;
- 
-  this align-self has space between the items
-  align-self: space-between;
+	default is auto
+	the width inside of the item
 
-  this align-self has space around the items
-	align-self: space-around;
-
-	center the items vertically
-	align-self: center;
+	flex: auto;
 */
 
 .box {
-	width: 33.33%;
+	flex: 1;
 }
 
+/*have double the amount of space*/
 .box1 {
+	flex: 2;
 	background: #1abc9c;
 }
 
+/*have 3 times the amount of space*/
 .box2 {
-	padding-bottom: 200px;
-	align-self: flex-end;
+	flex: 3;
 	background: #3498db;
 }
 
+/*have 4.5 amount of space*/
 .box3 {
+	flex: 4.5;
 	background: #9b59b6;
 }
 
 .box4 {
-	padding-bottom: 0;
-	align-self: center;
 	background: #34495e;
 }
 
@@ -76,8 +67,6 @@ html {
 }
 
 .box6 {
-	align-self: stretch;
-	padding-bottom: 50px;
 	background: #e67e22;
 }
 
