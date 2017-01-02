@@ -22,39 +22,57 @@ html {
 
 .container {
 	display: flex;
+	min-height: 100vh;
+	align-items: flex-start;
 }
 
 /*	
-	what do i do with extra space or
-	what do i do when i don't have space
+	3 things make up flex
 
-	flex is proportions to scale
 
-	default is auto
-	the width inside of the item
+	when we have extra space, how we divide it in the extra line
+	flex-grow
 
-	flex: auto;
+		the default is 0 which doesn't do anything with the extra spaces
+		flex-grow: 0;
+
+	how do we shrink or use the space with the items with there isn't space
+	flex-shrink
+	
+		the default is 1 which which evenly divides the room.
+		flex-shrink: 1;
+
+	how wide or high the element should be
+	flex-basis
+		can use number with any sizes px, rem etc.
+
+
+		flex: 1;
+	 is the same as
+	 	flex-grow: 1;
+	 	flex-shrink: 1;
+
+
+	 	flex: 1 1 200px;
+	 is the same as
+	 	flex-grow: 1;
+	 	flex-shrink: 1;
+	 	flex-basis: 200px;
 */
 
 .box {
-	flex: 1;
+	width: 33.33%;
 }
 
-/*have double the amount of space*/
 .box1 {
-	flex: 2;
 	background: #1abc9c;
 }
 
-/*have 3 times the amount of space*/
 .box2 {
-	flex: 3;
 	background: #3498db;
 }
 
-/*have 4.5 amount of space*/
 .box3 {
-	flex: 4.5;
 	background: #9b59b6;
 }
 
