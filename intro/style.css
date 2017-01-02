@@ -22,9 +22,24 @@ html {
 
 .container {
 	display: flex;
-	border: 10px solid;
-	min-height: 100vh;
+/*	justify-content is how the item align in the main axis.
+ default
+	justify-content: flex-start;
 
+	this starts at the end of the container
+	justify-content: flex-end;
+ 
+ this justify-content in the center of the container
+ justify-content: center;
+
+	adds space between the items
+ justify-content: space-between;
+
+	space on the left and right side
+
+	This all depends on the main axis with row and columns
+*/
+ justify-content: space-around;
 }
 
 .box {
@@ -40,24 +55,18 @@ html {
 }
 
 .box3 {
-/*	default order is 0*/
-/*	doesn't work with text copying*/
-	order: 5;
 	background: #9b59b6;
 }
 
 .box4 {
-	order: 1;
 	background: #34495e;
 }
 
 .box5 {
-	order: 2;
 	background: #f1c40f;
 }
 
 .box6 {
-	order: -3;
 	background: #e67e22;
 }
 
