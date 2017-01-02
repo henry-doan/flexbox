@@ -23,32 +23,29 @@ html {
 .container {
 	display: flex;
 	min-height: 100vh;
-	flex-wrap: wrap;
-/*	center the items horizontally */
-	justify-content: center;
+	align-items: flex-start;
+}
+
 /*	
-	only works on multiple lines of code
+	over write the default of a item
 	default, strech all  the way to the width or height of the axis
-	align-content: stretch;
+	align-self: stretch;
 
 	this starts at the end of the container
-	align-content: flex-end;
+	align-self: flex-end;
 
 	this starts at the start of the container, the hieght of what they need
-	align-content: flex-start;
+	align-self: flex-start;
  
-  this align-content has space between the items
-  align-content: space-between;
+  this align-self has space between the items
+  align-self: space-between;
 
-  this align-content has space around the items
-	align-content: space-around;
+  this align-self has space around the items
+	align-self: space-around;
 
 	center the items vertically
-	align-content: center;
+	align-self: center;
 */
-
- align-content: center;
-}
 
 .box {
 	width: 33.33%;
@@ -59,6 +56,8 @@ html {
 }
 
 .box2 {
+	padding-bottom: 200px;
+	align-self: flex-end;
 	background: #3498db;
 }
 
@@ -67,6 +66,8 @@ html {
 }
 
 .box4 {
+	padding-bottom: 0;
+	align-self: center;
 	background: #34495e;
 }
 
@@ -75,6 +76,8 @@ html {
 }
 
 .box6 {
+	align-self: stretch;
+	padding-bottom: 50px;
 	background: #e67e22;
 }
 
