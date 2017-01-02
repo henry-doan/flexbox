@@ -23,29 +23,38 @@ html {
 .container {
 	display: flex;
 	min-height: 100vh;
+	flex-wrap: wrap;
+/*	center the items horizontally */
+	justify-content: center;
 /*	
-	it is vertically algin to center but depends on the container and the axises
+	only works on multiple lines of code
 	default, strech all  the way to the width or height of the axis
-	align-items: stretch;
+	align-content: stretch;
 
 	this starts at the end of the container
-	align-items: flex-end;
+	align-content: flex-end;
 
-	this starts at the start of the container
-	align-items: flex-start;
+	this starts at the start of the container, the hieght of what they need
+	align-content: flex-start;
  
-  this align-items in the center of the container
-  align-items: center;
+  this align-content has space between the items
+  align-content: space-between;
 
-	looks at the text and make sure the bottom is align properly
-	align-items: baseline;
+  this align-content has space around the items
+	align-content: space-around;
+
+	center the items vertically
+	align-content: center;
 */
 
- align-items: baseline; 
+ align-content: center;
+}
+
+.box {
+	width: 33.33%;
 }
 
 .box1 {
-	font-size: 30px;
 	background: #1abc9c;
 }
 
@@ -54,12 +63,10 @@ html {
 }
 
 .box3 {
-	font-size: 150px;
 	background: #9b59b6;
 }
 
 .box4 {
-	font-size: 200px;
 	background: #34495e;
 }
 
