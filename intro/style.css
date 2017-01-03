@@ -27,37 +27,10 @@ html {
 }
 
 /*	
-	3 things make up flex
+	The flex grow ony works on the same row and not all of them
+	if we set the flex-wrap to wrap
 
-
-	when we have extra space, how we divide it in the extra line
-	flex-grow
-
-		the default is 0 which doesn't do anything with the extra spaces
-		flex-grow: 0;
-
-	how do we shrink or use the space with the items with there isn't space
-	flex-shrink
-	
-		the default is 1 which which evenly divides the room.
-		flex-shrink: 1;
-
-	how wide or high the element should be
-	flex-basis
-		can use number with any sizes px, rem etc.
-
-
-		flex: 1;
-	 is the same as
-	 	flex-grow: 1;
-	 	flex-shrink: 1;
-
-
-	 	flex: 1 1 200px;
-	 is the same as
-	 	flex-grow: 1;
-	 	flex-shrink: 1;
-	 	flex-basis: 200px;
+	Set an flex-basis width or height and have items wrap and stretch automatically.
 */
 
 .box {
