@@ -21,20 +21,27 @@ html {
 }
 
 .container {
+	/*display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	        justify-content: center;
+	min-height: 100vh;*/
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 	min-height: 100vh;
-	align-items: flex-start;
 }
 
-/*	
-	The flex grow ony works on the same row and not all of them
-	if we set the flex-wrap to wrap
-
-	Set an flex-basis width or height and have items wrap and stretch automatically.
-*/
-
 .box {
-	width: 33.33%;
+	height: 33.33%;
 }
 
 .box1 {
